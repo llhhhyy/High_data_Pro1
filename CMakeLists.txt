@@ -1,46 +1,22 @@
-# 设置最低 CMake 版本要求
 cmake_minimum_required(VERSION 3.10)
+project(LSM_TREE)
 
-# 定义项目名称
-project(LSM_KV)
-
-# 设置编译器路径
-set(CMAKE_C_COMPILER "D:/gcc14.2/mingw64/bin/gcc.exe")
-set(CMAKE_CXX_COMPILER "D:/gcc14.2/mingw64/bin/g++.exe")
-
-# 设置 C++ 标准
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# 包含头文件目录
-include_directories(${CMAKE_SOURCE_DIR})
+add_executable(correctness correctness.cc kvstore_api.h kvstore.h
+        kvstore.cc skiplist.cpp skiplist.h sstable.cpp sstable.h
+        bloom.cpp bloom.h MurmurHash3.h utils.h test.h
+        sstablehead.cpp sstablehead.h)
 
-# 添加可执行文件目标：correctness
-add_executable(correctness
-    correctness.cc
-    kvstore.cc
-    skiplist.cpp
-    sstable.cpp
-    sstablehead.cpp
-    bloom.cpp
-)
+add_executable(persistence persistence.cc kvstore_api.h kvstore.h kvstore.cc
+        skiplist.cpp skiplist.h sstable.cpp sstable.h
+        bloom.cpp bloom.h MurmurHash3.h utils.h test.h
+        sstablehead.cpp sstablehead.h)
 
-# 添加可执行文件目标：persistence
-add_executable(persistence
-    persistence.cc
-    kvstore.cc
-    skiplist.cpp
-    sstable.cpp
-    sstablehead.cpp
-    bloom.cpp
-)
+add_subdirectory(third_party/llama.cpp)
 
-add_executable(Mytest
-    Mytest.cc
-    kvstore.cc
-    skiplist.cpp
-    sstable.cpp
-    sstablehead.cpp
-    bloom.cpp
-)
+add_subdirectory(embedding)
+
+add_subdirectory(test)
