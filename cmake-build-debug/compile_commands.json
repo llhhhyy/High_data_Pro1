@@ -1,0 +1,74 @@
+[
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\correctness.cc.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\correctness.cc",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\correctness.cc",
+  "output": "CMakeFiles\\correctness.dir\\correctness.cc.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\kvstore.cc.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\kvstore.cc",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\kvstore.cc",
+  "output": "CMakeFiles\\correctness.dir\\kvstore.cc.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\skiplist.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\skiplist.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\skiplist.cpp",
+  "output": "CMakeFiles\\correctness.dir\\skiplist.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\sstable.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstable.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstable.cpp",
+  "output": "CMakeFiles\\correctness.dir\\sstable.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\bloom.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\bloom.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\bloom.cpp",
+  "output": "CMakeFiles\\correctness.dir\\bloom.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\sstablehead.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstablehead.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstablehead.cpp",
+  "output": "CMakeFiles\\correctness.dir\\sstablehead.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\persistence.cc.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\persistence.cc",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\persistence.cc",
+  "output": "CMakeFiles\\persistence.dir\\persistence.cc.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\kvstore.cc.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\kvstore.cc",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\kvstore.cc",
+  "output": "CMakeFiles\\persistence.dir\\kvstore.cc.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\skiplist.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\skiplist.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\skiplist.cpp",
+  "output": "CMakeFiles\\persistence.dir\\skiplist.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\sstable.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstable.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstable.cpp",
+  "output": "CMakeFiles\\persistence.dir\\sstable.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\bloom.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\bloom.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\bloom.cpp",
+  "output": "CMakeFiles\\persistence.dir\\bloom.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\sstablehead.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstablehead.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstablehead.cpp",
+  "output": "CMakeFiles\\persistence.dir\\sstablehead.cpp.obj"
+}
+]

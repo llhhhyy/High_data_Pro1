@@ -1,0 +1,4 @@
+C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/correctness.dir
+C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/persistence.dir
+C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/rebuild_cache.dir

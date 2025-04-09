@@ -1,0 +1,10 @@
+prefix=C:/Program Files (x86)/LSM_TREE
+exec_prefix=C:/Program Files (x86)/LSM_TREE
+libdir=C:/Program Files (x86)/LSM_TREE/lib
+includedir=C:/Program Files (x86)/LSM_TREE/include
+
+Name: llama
+Description: Port of Facebook's LLaMA model in C/C++
+Version: 0.0.4953
+Libs: -L${libdir} -lggml -lggml-base -lllama
+Cflags: -I${includedir}

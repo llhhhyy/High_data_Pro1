@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LSM_TREE",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "correctness::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-correctness-Debug-659fd7420690f477bcf9.json",
+					"name" : "correctness",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "persistence::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-persistence-Debug-92803faa1f9dcc9d7a69.json",
+					"name" : "persistence",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+		"source" : "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
