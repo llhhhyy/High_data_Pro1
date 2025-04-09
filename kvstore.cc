@@ -5,6 +5,7 @@
 #include "utils.h"
 
 #include <algorithm>
+#include <cmath>
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
@@ -79,13 +80,14 @@ bool KVStore::out_of_limit(int curLevel) {
 void KVStore::put(uint64_t key, const std::string &val) {
     uint32_t nxtsize = s->getBytes();
     std::string res  = s->search(key);
-    if (!res.length()) { // new add
+    if (!res.length()) { // 新增
         nxtsize += 12 + val.length();
     } else
-        nxtsize = nxtsize - res.length() + val.length(); // change string
-    if (nxtsize + 10240 + 32 <= MAXSIZE)
-        s->insert(key, val); // 小于等于（不超过） 2MB
-    else {
+        nxtsize = nxtsize - res.length() + val.length();
+    if (nxtsize + 10240 + 32 <= MAXSIZE) {
+        s->insert(key, val);
+        embeddings[key] = generate_embedding(val);
+    } else {
         sstable ss(s);
         s->reset();
         std::string url  = ss.getFilename();
@@ -98,6 +100,7 @@ void KVStore::put(uint64_t key, const std::string &val) {
         ss.putFile(url.data()); // 加入磁盘
         compaction();
         s->insert(key, val);
+        embeddings[key] = generate_embedding(val);
     }
 }
 
@@ -157,8 +160,9 @@ std::string KVStore::get(uint64_t key) //
 bool KVStore::del(uint64_t key) {
     std::string res = get(key);
     if (!res.length())
-        return false; // not exist
-    put(key, DEL);    // put a del marker
+        return false;
+    put(key, DEL);
+    embeddings[key] = generate_embedding(DEL);
     return true;
 }
 
@@ -167,9 +171,10 @@ bool KVStore::del(uint64_t key) {
  * including memtable and all sstables files.
  */
 void KVStore::reset() {
-    s->reset(); // 先清空memtable
+    s->reset(); // 清空memtable
+    embeddings.clear(); // 清空嵌入向量
     std::vector<std::string> files;
-    for (int level = 0; level <= totalLevel; ++level) { // 依层清空每一层的sstables
+    for (int level = 0; level <= totalLevel; ++level) {
         std::string path = std::string("./data/level-") + std::to_string(level);
         int size         = utils::scanDir(path, files);
         for (int i = 0; i < size; ++i) {
@@ -423,5 +428,75 @@ std::string KVStore::fetchString(std::string file, int startOffset, uint32_t len
 
     inFile.close();
 
+    return result;
+}
+
+std::vector<float> KVStore::generate_embedding(const std::string &value) {
+    return embedding_single(value); // 调用提供的嵌入模型
+}
+
+std::vector<std::pair<std::uint64_t, std::string>> KVStore::search_knn(std::string query, int k) {
+    // 生成查询字符串的嵌入向量
+    std::vector<float> query_vec = generate_embedding(query);
+
+    // 定义比较函数：按余弦相似度从高到低排序
+    auto cmp = [](const std::pair<double, std::pair<uint64_t, std::string>> &a,
+                  const std::pair<double, std::pair<uint64_t, std::string>> &b) {
+        return a.first < b.first; // 最大堆
+    };
+    std::priority_queue<std::pair<double, std::pair<uint64_t, std::string>>,
+                        std::vector<std::pair<double, std::pair<uint64_t, std::string>>>,
+                        decltype(cmp)> pq(cmp);
+
+    // 计算余弦相似度的辅助函数
+    auto cosine_similarity = [](const std::vector<float> &a, const std::vector<float> &b) {
+        double dot = 0.0, norm_a = 0.0, norm_b = 0.0;
+        for (size_t i = 0; i < a.size(); i++) {
+            dot += a[i] * b[i];
+            norm_a += a[i] * a[i];
+            norm_b += b[i] * b[i];
+        }
+        if (norm_a == 0 || norm_b == 0) return 0.0;
+        return dot / (sqrt(norm_a) * sqrt(norm_b));
+    };
+
+    // 遍历memtable
+    std::vector<std::pair<uint64_t, std::string>> mem;
+    s->scan(0, UINT64_MAX, mem);
+    for (const auto &pair : mem) {
+        if (pair.second != DEL) {
+            double sim = cosine_similarity(query_vec, embeddings[pair.first]);
+            pq.push({sim, {pair.first, pair.second}});
+        }
+    }
+
+    // 遍历SSTables
+    for (int level = 0; level <= totalLevel; ++level) {
+        for (const auto &head : sstableIndex[level]) {
+            uint32_t cnt = head.getCnt();
+            for (uint32_t i = 0; i < cnt; i++) {
+                uint64_t key = head.getKey(i);
+                uint32_t offset = head.getOffset(i);
+                uint32_t len = (i + 1 < cnt) ? head.getOffset(i + 1) - offset : 0;
+                std::string val = fetchString(head.getFilename(), 10240 + 32 + cnt * 12 + offset, len);
+                if (val != DEL) {
+                    // 如果嵌入不在内存中，重新生成（仅在内存丢失时发生）
+                    if (embeddings.find(key) == embeddings.end()) {
+                        embeddings[key] = generate_embedding(val);
+                    }
+                    double sim = cosine_similarity(query_vec, embeddings[key]);
+                    pq.push({sim, {key, val}});
+                }
+            }
+        }
+    }
+
+    // 取出前k个结果
+    std::vector<std::pair<uint64_t, std::string>> result;
+    while (!pq.empty() && result.size() < static_cast<size_t>(k)) {
+        auto top = pq.top();
+        pq.pop();
+        result.push_back(top.second);
+    }
     return result;
 }
