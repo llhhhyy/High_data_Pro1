@@ -1,0 +1,14 @@
+"D:\Clion\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Clion/CLion 2024.3.5/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\96317\Desktop\homework\High_level_data_structures\Project1\LSM_Tree -B C:\Users\96317\Desktop\homework\High_level_data_structures\Project1\LSM_Tree\cmake-build-debug
+-- ccache found, compilation results will be cached. Disable with GGML_CCACHE=OFF.
+-- CMAKE_SYSTEM_PROCESSOR: AMD64
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -march=native 
+CMake Warning at third_party/llama.cpp/common/CMakeLists.txt:32 (message):
+  Git repository not found; to enable automatic generation of build info,
+  make sure Git is installed and the project is a Git repository.
+
+
+-- Configuring done (3.0s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug

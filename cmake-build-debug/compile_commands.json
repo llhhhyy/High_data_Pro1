@@ -1,0 +1,380 @@
+[
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\correctness.cc.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\correctness.cc",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\correctness.cc",
+  "output": "CMakeFiles\\correctness.dir\\correctness.cc.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\kvstore.cc.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\kvstore.cc",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\kvstore.cc",
+  "output": "CMakeFiles\\correctness.dir\\kvstore.cc.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\skiplist.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\skiplist.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\skiplist.cpp",
+  "output": "CMakeFiles\\correctness.dir\\skiplist.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\sstable.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstable.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstable.cpp",
+  "output": "CMakeFiles\\correctness.dir\\sstable.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\bloom.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\bloom.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\bloom.cpp",
+  "output": "CMakeFiles\\correctness.dir\\bloom.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\correctness.dir\\sstablehead.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstablehead.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstablehead.cpp",
+  "output": "CMakeFiles\\correctness.dir\\sstablehead.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\persistence.cc.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\persistence.cc",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\persistence.cc",
+  "output": "CMakeFiles\\persistence.dir\\persistence.cc.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\kvstore.cc.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\kvstore.cc",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\kvstore.cc",
+  "output": "CMakeFiles\\persistence.dir\\kvstore.cc.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\skiplist.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\skiplist.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\skiplist.cpp",
+  "output": "CMakeFiles\\persistence.dir\\skiplist.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\sstable.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstable.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstable.cpp",
+  "output": "CMakeFiles\\persistence.dir\\sstable.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\bloom.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\bloom.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\bloom.cpp",
+  "output": "CMakeFiles\\persistence.dir\\bloom.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\persistence.dir\\sstablehead.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstablehead.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\sstablehead.cpp",
+  "output": "CMakeFiles\\persistence.dir\\sstablehead.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\gcc.exe -DGGML_SCHED_MAX_COPIES=4 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu11 -fdiagnostics-color=always -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -pthread -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml.c.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml.c",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml.c",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml.c.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\gcc.exe -DGGML_SCHED_MAX_COPIES=4 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu11 -fdiagnostics-color=always -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -pthread -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-alloc.c.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-alloc.c",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-alloc.c",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-alloc.c.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-backend.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-backend.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-backend.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-backend.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-opt.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-opt.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-opt.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-opt.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-threading.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-threading.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-threading.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-threading.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\gcc.exe -DGGML_SCHED_MAX_COPIES=4 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu11 -fdiagnostics-color=always -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -pthread -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-quants.c.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-quants.c",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-quants.c",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-quants.c.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\gguf.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\gguf.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\gguf.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\gguf.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml.dir\\ggml-backend-reg.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-backend-reg.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-backend-reg.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml.dir\\ggml-backend-reg.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\gcc.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/.. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/ggml-cpu -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu11 -fdiagnostics-color=always -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -march=native -fopenmp -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu.c.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu.c",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu.c",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu.c.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/.. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/ggml-cpu -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/.. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/ggml-cpu -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu-aarch64.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu-aarch64.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu-aarch64.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu-aarch64.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/.. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/ggml-cpu -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu-hbm.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu-hbm.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu-hbm.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu-hbm.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\gcc.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/.. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/ggml-cpu -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu11 -fdiagnostics-color=always -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -march=native -fopenmp -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu-quants.c.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu-quants.c",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu-quants.c",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu-quants.c.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/.. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/ggml-cpu -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu-traits.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu-traits.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu-traits.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu-traits.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/.. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/ggml-cpu -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\amx\\amx.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\amx\\amx.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\amx\\amx.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\amx\\amx.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/.. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/ggml-cpu -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\amx\\mmq.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\amx\\mmq.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\amx\\mmq.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\amx\\mmq.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x602 -D_XOPEN_SOURCE=600 -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/.. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/ggml-cpu -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++17 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\llamafile\\sgemm.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\llamafile\\sgemm.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\ggml\\src\\ggml-cpu\\llamafile\\sgemm.cpp",
+  "output": "third_party\\llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\llamafile\\sgemm.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-adapter.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-adapter.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-adapter.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-adapter.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-arch.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-arch.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-arch.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-arch.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-batch.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-batch.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-batch.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-batch.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-chat.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-chat.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-chat.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-chat.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-context.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-context.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-context.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-context.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-grammar.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-grammar.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-grammar.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-grammar.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-graph.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-graph.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-graph.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-graph.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-hparams.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-hparams.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-hparams.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-hparams.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-impl.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-impl.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-impl.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-impl.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-io.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-io.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-io.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-io.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-kv-cache.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-kv-cache.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-kv-cache.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-kv-cache.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-memory.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-memory.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-memory.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-memory.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-mmap.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-mmap.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-mmap.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-mmap.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-model-loader.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-model-loader.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-model-loader.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-model-loader.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-model.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-model.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-model.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-model.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-quant.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-quant.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-quant.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-quant.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-sampling.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-sampling.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-sampling.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-sampling.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-vocab.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-vocab.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\llama-vocab.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-vocab.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\unicode-data.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\unicode-data.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\unicode-data.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\unicode-data.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\unicode.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\unicode.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\src\\unicode.cpp",
+  "output": "third_party\\llama.cpp\\src\\CMakeFiles\\llama.dir\\unicode.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -D_CRT_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o third_party\\llama.cpp\\common\\CMakeFiles\\build_info.dir\\build-info.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\build-info.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\build-info.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\build_info.dir\\build-info.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\arg.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\arg.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\arg.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\arg.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\chat.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\chat.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\chat.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\chat.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\common.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\common.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\common.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\common.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\console.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\console.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\console.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\console.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\json-schema-to-grammar.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\json-schema-to-grammar.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\json-schema-to-grammar.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\json-schema-to-grammar.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\llguidance.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\llguidance.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\llguidance.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\llguidance.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\log.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\log.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\log.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\log.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\ngram-cache.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\ngram-cache.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\ngram-cache.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\ngram-cache.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\sampling.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\sampling.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\sampling.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\sampling.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -g -std=gnu++20 -fdiagnostics-color=always -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -pthread -o third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\speculative.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\speculative.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\third_party\\llama.cpp\\common\\speculative.cpp",
+  "output": "third_party\\llama.cpp\\common\\CMakeFiles\\common.dir\\speculative.cpp.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/embedding -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -g -std=gnu++20 -fdiagnostics-color=always -pthread -o embedding\\CMakeFiles\\embedding.dir\\embedding.cc.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\embedding\\embedding.cc",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\embedding\\embedding.cc",
+  "output": "embedding\\CMakeFiles\\embedding.dir\\embedding.cc.obj"
+},
+{
+  "directory": "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+  "command": "C:\\WinGw64\\mingw64\\bin\\c++.exe -DGGML_USE_CPU -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/embedding -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -IC:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/. -g -std=gnu++20 -fdiagnostics-color=always -pthread -o test\\CMakeFiles\\Embedding_Test.dir\\Embedding_Test.cpp.obj -c C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\test\\Embedding_Test.cpp",
+  "file": "C:\\Users\\96317\\Desktop\\homework\\High_level_data_structures\\Project1\\LSM_Tree\\test\\Embedding_Test.cpp",
+  "output": "test\\CMakeFiles\\Embedding_Test.dir\\Embedding_Test.cpp.obj"
+}
+]

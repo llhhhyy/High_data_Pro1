@@ -1,0 +1,304 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						7,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3,
+						9
+					]
+				},
+				{
+					"build" : "third_party/llama.cpp",
+					"childIndexes" : 
+					[
+						2,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-third_party.llama.cpp-Debug-657edf3eec06e9a085b5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "third_party/llama.cpp"
+				},
+				{
+					"build" : "third_party/llama.cpp/ggml",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-third_party.llama.cpp.ggml-Debug-7aa608434e822cd3a1f7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "third_party/llama.cpp/ggml"
+				},
+				{
+					"build" : "third_party/llama.cpp/ggml/src",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-third_party.llama.cpp.ggml.src-Debug-2512c240f75d90e5fedd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "third_party/llama.cpp/ggml/src",
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7
+					]
+				},
+				{
+					"build" : "third_party/llama.cpp/ggml/src/ggml-cpu",
+					"jsonFile" : "directory-third_party.llama.cpp.ggml.src.ggml-cpu-Debug-00a4969311607886feb7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "third_party/llama.cpp/ggml/src/ggml-cpu"
+				},
+				{
+					"build" : "third_party/llama.cpp/src",
+					"jsonFile" : "directory-third_party.llama.cpp.src-Debug-38d5e46b2611d5b6d9d1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "third_party/llama.cpp/src",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "third_party/llama.cpp/common",
+					"jsonFile" : "directory-third_party.llama.cpp.common-Debug-f7112a8310f15af5d768.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "third_party/llama.cpp/common",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"build" : "embedding",
+					"jsonFile" : "directory-embedding-Debug-522d2c1f72a9fbb3658c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "embedding",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-f18be1977b403cfd1a50.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						7,
+						8
+					],
+					"name" : "LSM_TREE",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						4,
+						9
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						5,
+						6
+					],
+					"name" : "llama.cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "ggml",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 8,
+					"id" : "Embedding_Test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-Embedding_Test-Debug-748310bee3b456fb310d.json",
+					"name" : "Embedding_Test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "build_info::@430b077c762759e3094a",
+					"jsonFile" : "target-build_info-Debug-2a04a31b12b5a155bb72.json",
+					"name" : "build_info",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "common::@430b077c762759e3094a",
+					"jsonFile" : "target-common-Debug-7919bd31e85048ffa996.json",
+					"name" : "common",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "correctness::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-correctness-Debug-58636cb326ae3f0c4ce6.json",
+					"name" : "correctness",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "embedding::@b842a10da8c8a7685197",
+					"jsonFile" : "target-embedding-Debug-1a6c36738493007d1aaf.json",
+					"name" : "embedding",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml::@6fb243c56d1be69d9933",
+					"jsonFile" : "target-ggml-Debug-2e46ff9ba1bc009c2d39.json",
+					"name" : "ggml",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml-base::@6fb243c56d1be69d9933",
+					"jsonFile" : "target-ggml-base-Debug-d4691354e85e3158b236.json",
+					"name" : "ggml-base",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml-cpu::@6fb243c56d1be69d9933",
+					"jsonFile" : "target-ggml-cpu-Debug-8141f0a49950d17a828a.json",
+					"name" : "ggml-cpu",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "llama::@bf716c64e9230b199072",
+					"jsonFile" : "target-llama-Debug-8379bb794e106c515ab5.json",
+					"name" : "llama",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "persistence::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-persistence-Debug-2f3ac20e0f28fd35be72.json",
+					"name" : "persistence",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug",
+		"source" : "C:/Users/96317/Desktop/homework/High_level_data_structures/Project1/LSM_Tree"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
