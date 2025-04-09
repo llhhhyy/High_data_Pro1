@@ -5,7 +5,7 @@
 #endif
 
 const int NGL = 99;
-const std::string MODEL = "./handout/model/nomic-embed-text-v1.5.Q8_0.gguf";
+const std::string MODEL = "./model/nomic-embed-text-v1.5.Q8_0.gguf";
 const int CONTEXT_SIZE = 2048;
 const int BATCH_SIZE = 2048;
 const int ROPE_SCALING_YARN = 1;

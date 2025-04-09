@@ -1,4 +1,4 @@
-# Install script for directory: D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree
+# Install script for directory: D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,21 +37,3 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "D:/gcc14.2/mingw64/bin/objdump.exe")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/third_party/llama.cpp/cmake_install.cmake")
-  include("D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/embedding/cmake_install.cmake")
-  include("D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/test/cmake_install.cmake")
-
-endif()
-
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

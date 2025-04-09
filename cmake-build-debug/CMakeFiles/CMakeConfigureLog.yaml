@@ -552,3 +552,670 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "third_party/llama.cpp/ggml/CMakeLists.txt:221 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i3hpc9"
+      binary: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i3hpc9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i3hpc9'
+        
+        Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_924b2
+        [1/2] D:\\gcc14.2\\mingw64\\bin\\cc.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu11 -fdiagnostics-color=always -o CMakeFiles/cmTC_924b2.dir/src.c.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i3hpc9/src.c
+        [2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\cc.exe   CMakeFiles/cmTC_924b2.dir/src.c.obj -o cmTC_924b2.exe -Wl,--out-implib,libcmTC_924b2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_924b2.exe 
+        cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\cc.exe   CMakeFiles/cmTC_924b2.dir/src.c.obj -o cmTC_924b2.exe -Wl,--out-implib,libcmTC_924b2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_924b2.dir/src.c.obj:src.c:(.text+0x35): undefined reference to `pthread_create'
+        D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_924b2.dir/src.c.obj:src.c:(.text+0x41): undefined reference to `pthread_detach'
+        D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_924b2.dir/src.c.obj:src.c:(.text+0x4d): undefined reference to `pthread_cancel'
+        D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_924b2.dir/src.c.obj:src.c:(.text+0x5e): undefined reference to `pthread_join'
+        D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_924b2.dir/src.c.obj:src.c:(.text+0x68): undefined reference to `pthread_exit'
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:136 (try_compile)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:169 (_threads_check_flag_pthread)"
+      - "third_party/llama.cpp/ggml/CMakeLists.txt:221 (find_package)"
+    checks:
+      - "Check if compiler accepts -pthread"
+    directories:
+      source: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9oncsn"
+      binary: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9oncsn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/cmake/"
+    buildResult:
+      variable: "THREADS_HAVE_PTHREAD_ARG"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9oncsn'
+        
+        Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_f7f44
+        [1/2] D:\\gcc14.2\\mingw64\\bin\\cc.exe   -std=gnu11 -fdiagnostics-color=always -o CMakeFiles/cmTC_f7f44.dir/CheckForPthreads.c.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9oncsn/CheckForPthreads.c
+        [2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\cc.exe   CMakeFiles/cmTC_f7f44.dir/CheckForPthreads.c.obj -o cmTC_f7f44.exe -Wl,--out-implib,libcmTC_f7f44.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -pthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
+      - "third_party/llama.cpp/ggml/src/ggml-cpu/CMakeLists.txt:47 (find_package)"
+      - "third_party/llama.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qbsipo"
+      binary: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qbsipo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qbsipo'
+        
+        Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_05ba3
+        [1/2] D:\\gcc14.2\\mingw64\\bin\\cc.exe   -fopenmp -v -std=gnu11 -fdiagnostics-color=always -o CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qbsipo/OpenMPTryFlag.c
+        Using built-in specs.
+        COLLECT_GCC=D:\\gcc14.2\\mingw64\\bin\\cc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-14.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05ba3.dir/'
+         D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_MT -D_REENTRANT -U_REENTRANT D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qbsipo/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_05ba3.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -mthreads -std=gnu11 -version -fdiagnostics-color=always -fopenmp -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccjUQwHT.s
+        GNU C11 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) version 14.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 14.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../include"
+        ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed"
+        ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 64a31a6ba5c604df620d08f22c4d358b
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05ba3.dir/'
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccjUQwHT.s
+        GNU assembler version 2.43 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.43
+        COMPILER_PATH=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;D:/gcc14.2/mingw64/bin/../libexec/gcc/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;D:/gcc14.2/mingw64/bin/../lib/gcc/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.'
+        [2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\cc.exe -fopenmp -v  CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj -o cmTC_05ba3.exe -Wl,--out-implib,libcmTC_05ba3.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -v  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Using built-in specs.
+        COLLECT_GCC=D:\\gcc14.2\\mingw64\\bin\\cc.exe
+        COLLECT_LTO_WRAPPER=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-14.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COMPILER_PATH=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;D:/gcc14.2/mingw64/bin/../libexec/gcc/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;D:/gcc14.2/mingw64/bin/../lib/gcc/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
+        Reading specs from D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_05ba3.exe' '-v' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_05ba3.'
+         D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccXepRwY.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_05ba3.exe D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LD:/gcc14.2/mingw64/bin/../lib/gcc -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj --out-implib libcmTC_05ba3.dll.a --major-image-version 0 --minor-image-version 0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -lgomp -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_05ba3.exe' '-v' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_05ba3.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
+      - "third_party/llama.cpp/ggml/src/ggml-cpu/CMakeLists.txt:47 (find_package)"
+      - "third_party/llama.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qbsipo']
+        ignore line: []
+        ignore line: [Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_05ba3]
+        ignore line: [[1/2] D:\\gcc14.2\\mingw64\\bin\\cc.exe   -fopenmp -v -std=gnu11 -fdiagnostics-color=always -o CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qbsipo/OpenMPTryFlag.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\gcc14.2\\mingw64\\bin\\cc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-14.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05ba3.dir/']
+        ignore line: [ D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_MT -D_REENTRANT -U_REENTRANT D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qbsipo/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_05ba3.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -mthreads -std=gnu11 -version -fdiagnostics-color=always -fopenmp -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccjUQwHT.s]
+        ignore line: [GNU C11 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) version 14.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include]
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed]
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 64a31a6ba5c604df620d08f22c4d358b]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05ba3.dir/']
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccjUQwHT.s]
+        ignore line: [GNU assembler version 2.43 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.43]
+        ignore line: [COMPILER_PATH=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../libexec/gcc/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.']
+        ignore line: [[2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\cc.exe -fopenmp -v  CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj -o cmTC_05ba3.exe -Wl --out-implib libcmTC_05ba3.dll.a -Wl --major-image-version 0 --minor-image-version 0  -v  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\gcc14.2\\mingw64\\bin\\cc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-14.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COMPILER_PATH=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../libexec/gcc/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
+        ignore line: [Reading specs from D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_05ba3.exe' '-v' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_05ba3.']
+        link line: [ D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccXepRwY.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_05ba3.exe D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LD:/gcc14.2/mingw64/bin/../lib/gcc -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj --out-implib libcmTC_05ba3.dll.a --major-image-version 0 --minor-image-version 0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -lgomp -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+          arg [D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccXepRwY.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwthrd] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-liconv] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwthrd] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_05ba3.exe] ==> ignore
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..]
+          arg [CMakeFiles/cmTC_05ba3.dir/OpenMPTryFlag.c.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_05ba3.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lgdi32] ==> lib [gdi32]
+          arg [-lwinspool] ==> lib [winspool]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-lole32] ==> lib [ole32]
+          arg [-loleaut32] ==> lib [oleaut32]
+          arg [-luuid] ==> lib [uuid]
+          arg [-lcomdlg32] ==> lib [comdlg32]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lmingwthrd] ==> lib [mingwthrd]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-liconv] ==> lib [iconv]
+          arg [-lmingwthrd] ==> lib [mingwthrd]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> [D:/gcc14.2/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc] ==> [D:/gcc14.2/mingw64/lib/gcc]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib] ==> [D:/gcc14.2/mingw64/lib]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib] ==> [D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> [D:/gcc14.2/mingw64/lib]
+        implicit libs: [kernel32;user32;gdi32;winspool;shell32;ole32;oleaut32;uuid;comdlg32;advapi32;gomp;mingwthrd;mingw32;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingwthrd;mingw32;gcc;mingwex;kernel32]
+        implicit objs: []
+        implicit dirs: [D:/gcc14.2/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0;D:/gcc14.2/mingw64/lib/gcc;D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib;D:/gcc14.2/mingw64/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
+      - "third_party/llama.cpp/ggml/src/ggml-cpu/CMakeLists.txt:47 (find_package)"
+      - "third_party/llama.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tpjmol"
+      binary: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tpjmol"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tpjmol'
+        
+        Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_9ff34
+        [1/2] D:\\gcc14.2\\mingw64\\bin\\c++.exe   -fopenmp -v -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tpjmol/OpenMPTryFlag.cpp
+        Using built-in specs.
+        COLLECT_GCC=D:\\gcc14.2\\mingw64\\bin\\c++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-14.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9ff34.dir/'
+         D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_MT -D_REENTRANT -U_REENTRANT D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tpjmol/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_9ff34.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -mthreads -std=gnu++17 -version -fdiagnostics-color=always -fopenmp -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccPoc7jf.s
+        GNU C++17 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) version 14.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 14.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++"
+        ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward"
+        ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../include"
+        ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed"
+        ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: dd1e8e4454cb75d49fca27134f8c4945
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9ff34.dir/'
+         D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccPoc7jf.s
+        GNU assembler version 2.43 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.43
+        COMPILER_PATH=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;D:/gcc14.2/mingw64/bin/../libexec/gcc/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;D:/gcc14.2/mingw64/bin/../lib/gcc/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.'
+        [2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\c++.exe -fopenmp -v  CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj -o cmTC_9ff34.exe -Wl,--out-implib,libcmTC_9ff34.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -v  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Using built-in specs.
+        COLLECT_GCC=D:\\gcc14.2\\mingw64\\bin\\c++.exe
+        COLLECT_LTO_WRAPPER=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-14.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COMPILER_PATH=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;D:/gcc14.2/mingw64/bin/../libexec/gcc/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;D:/gcc14.2/mingw64/bin/../lib/gcc/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
+        Reading specs from D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_9ff34.exe' '-v' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_9ff34.'
+         D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccyF2LHb.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_9ff34.exe D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LD:/gcc14.2/mingw64/bin/../lib/gcc -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj --out-implib libcmTC_9ff34.dll.a --major-image-version 0 --minor-image-version 0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -lstdc++ -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_9ff34.exe' '-v' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_9ff34.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
+      - "third_party/llama.cpp/ggml/src/ggml-cpu/CMakeLists.txt:47 (find_package)"
+      - "third_party/llama.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tpjmol']
+        ignore line: []
+        ignore line: [Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_9ff34]
+        ignore line: [[1/2] D:\\gcc14.2\\mingw64\\bin\\c++.exe   -fopenmp -v -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tpjmol/OpenMPTryFlag.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\gcc14.2\\mingw64\\bin\\c++.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-14.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9ff34.dir/']
+        ignore line: [ D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_MT -D_REENTRANT -U_REENTRANT D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tpjmol/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_9ff34.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -mthreads -std=gnu++17 -version -fdiagnostics-color=always -fopenmp -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccPoc7jf.s]
+        ignore line: [GNU C++17 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) version 14.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++"]
+        ignore line: [ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "D:/gcc14.2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++]
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward]
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include]
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed]
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: dd1e8e4454cb75d49fca27134f8c4945]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9ff34.dir/']
+        ignore line: [ D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccPoc7jf.s]
+        ignore line: [GNU assembler version 2.43 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.43]
+        ignore line: [COMPILER_PATH=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../libexec/gcc/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.']
+        ignore line: [[2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\c++.exe -fopenmp -v  CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj -o cmTC_9ff34.exe -Wl --out-implib libcmTC_9ff34.dll.a -Wl --major-image-version 0 --minor-image-version 0  -v  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\gcc14.2\\mingw64\\bin\\c++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-14.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COMPILER_PATH=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../libexec/gcc/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
+        ignore line: [Reading specs from D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_9ff34.exe' '-v' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_9ff34.']
+        link line: [ D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccyF2LHb.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_9ff34.exe D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LD:/gcc14.2/mingw64/bin/../lib/gcc -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj --out-implib libcmTC_9ff34.dll.a --major-image-version 0 --minor-image-version 0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -lstdc++ -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+          arg [D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=D:/gcc14.2/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccyF2LHb.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwthrd] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-liconv] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwthrd] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev1/mingw64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_9ff34.exe] ==> ignore
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LD:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..]
+          arg [CMakeFiles/cmTC_9ff34.dir/OpenMPTryFlag.cpp.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_9ff34.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lgdi32] ==> lib [gdi32]
+          arg [-lwinspool] ==> lib [winspool]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-lole32] ==> lib [ole32]
+          arg [-loleaut32] ==> lib [oleaut32]
+          arg [-luuid] ==> lib [uuid]
+          arg [-lcomdlg32] ==> lib [comdlg32]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lmingwthrd] ==> lib [mingwthrd]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-liconv] ==> lib [iconv]
+          arg [-lmingwthrd] ==> lib [mingwthrd]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> [D:/gcc14.2/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc] ==> [D:/gcc14.2/mingw64/lib/gcc]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib] ==> [D:/gcc14.2/mingw64/lib]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib] ==> [D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> [D:/gcc14.2/mingw64/lib]
+        implicit libs: [kernel32;user32;gdi32;winspool;shell32;ole32;oleaut32;uuid;comdlg32;advapi32;stdc++;gomp;mingwthrd;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingwthrd;mingw32;gcc_s;gcc;mingwex;kernel32]
+        implicit objs: []
+        implicit dirs: [D:/gcc14.2/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0;D:/gcc14.2/mingw64/lib/gcc;D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib;D:/gcc14.2/mingw64/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:559 (_OPENMP_GET_SPEC_DATE)"
+      - "third_party/llama.cpp/ggml/src/ggml-cpu/CMakeLists.txt:47 (find_package)"
+      - "third_party/llama.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tmltkj"
+      binary: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tmltkj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tmltkj'
+        
+        Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_21626
+        [1/2] D:\\gcc14.2\\mingw64\\bin\\cc.exe   -fopenmp -std=gnu11 -fdiagnostics-color=always -o CMakeFiles/cmTC_21626.dir/OpenMPCheckVersion.c.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tmltkj/OpenMPCheckVersion.c
+        [2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\cc.exe -fopenmp  CMakeFiles/cmTC_21626.dir/OpenMPCheckVersion.c.obj -o cmTC_21626.exe -Wl,--out-implib,libcmTC_21626.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:559 (_OPENMP_GET_SPEC_DATE)"
+      - "third_party/llama.cpp/ggml/src/ggml-cpu/CMakeLists.txt:47 (find_package)"
+      - "third_party/llama.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sr5yng"
+      binary: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sr5yng"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sr5yng'
+        
+        Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_04ee9
+        [1/2] D:\\gcc14.2\\mingw64\\bin\\c++.exe   -fopenmp -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_04ee9.dir/OpenMPCheckVersion.cpp.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sr5yng/OpenMPCheckVersion.cpp
+        [2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\c++.exe -fopenmp  CMakeFiles/cmTC_04ee9.dir/OpenMPCheckVersion.cpp.obj -o cmTC_04ee9.exe -Wl,--out-implib,libcmTC_04ee9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "third_party/llama.cpp/common/CMakeLists.txt:3 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tnu9tg"
+      binary: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tnu9tg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tnu9tg'
+        
+        Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_53653
+        [1/2] D:\\gcc14.2\\mingw64\\bin\\cc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -fdiagnostics-color=always -o CMakeFiles/cmTC_53653.dir/CheckFunctionExists.c.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tnu9tg/CheckFunctionExists.c
+        [2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\cc.exe -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_53653.dir/CheckFunctionExists.c.obj -o cmTC_53653.exe -Wl,--out-implib,libcmTC_53653.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthreads  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_53653.exe 
+        cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\cc.exe -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_53653.dir/CheckFunctionExists.c.obj -o cmTC_53653.exe -Wl,--out-implib,libcmTC_53653.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthreads  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        D:/gcc14.2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lpthreads: No such file or directory
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/\u5907\u4efd/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "third_party/llama.cpp/common/CMakeLists.txt:3 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s79lhf"
+      binary: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s79lhf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s79lhf'
+        
+        Run Build Command(s): "D:/备份/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_ff60c
+        [1/2] D:\\gcc14.2\\mingw64\\bin\\cc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -fdiagnostics-color=always -o CMakeFiles/cmTC_ff60c.dir/CheckFunctionExists.c.obj -c D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s79lhf/CheckFunctionExists.c
+        [2/2] cmd.exe /C "cd . && D:\\gcc14.2\\mingw64\\bin\\cc.exe -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_ff60c.dir/CheckFunctionExists.c.obj -o cmTC_ff60c.exe -Wl,--out-implib,libcmTC_ff60c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...

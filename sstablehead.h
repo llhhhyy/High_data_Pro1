@@ -109,7 +109,7 @@ public:
         return maxV;
     }
 
-    uint64_t getKey(int p) {
+    uint64_t getKey(int p) const {
         return index[p].key;
     }
 
@@ -121,7 +121,7 @@ public:
         return nameSuffix;
     }
 
-    uint32_t getOffset(int p) {
+    uint32_t getOffset(int p) const {
         return (p < 0) ? 0 : index[p].offset;
     }
 
