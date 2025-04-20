@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "E2E_test.exe"
+			"path" : "Time_Test.exe"
 		},
 		{
-			"path" : "E2E_test.pdb"
+			"path" : "Time_Test.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -41,13 +41,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 42,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 52,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
@@ -262,7 +262,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "ggml::@6fb243c56d1be69d9933"
+			"id" : "ggml-cpu::@6fb243c56d1be69d9933"
 		},
 		{
 			"backtrace" : 2,
@@ -270,11 +270,15 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "ggml-cpu::@6fb243c56d1be69d9933"
+			"id" : "ggml::@6fb243c56d1be69d9933"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "llama::@bf716c64e9230b199072"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "embedding::@b842a10da8c8a7685197"
 		},
 		{
 			"backtrace" : 2,
@@ -283,13 +287,9 @@
 		{
 			"backtrace" : 2,
 			"id" : "common::@430b077c762759e3094a"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "embedding::@b842a10da8c8a7685197"
 		}
 	],
-	"id" : "E2E_test::@6890427a1f51a3e7e1df",
+	"id" : "Time_Test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -374,8 +374,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "E2E_test",
-	"nameOnDisk" : "E2E_test.exe",
+	"name" : "Time_Test",
+	"nameOnDisk" : "Time_Test.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -416,7 +416,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "test/E2E_test.cpp",
+			"path" : "test/Time_test.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

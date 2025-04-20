@@ -5,6 +5,7 @@
 #include "utils.h"
 
 #include <algorithm>
+#include <chrono>
 #include <cmath>
 #include <cstdlib>
 #include <fstream>
@@ -78,6 +79,13 @@ bool KVStore::out_of_limit(int curLevel) {
  * No return values for simplicity.
  */
 void KVStore::put(uint64_t key, const std::string &val) {
+    auto start = std::chrono::high_resolution_clock::now(); // 计时开始
+    std::vector<float> embedding_vector = embedding_single(val);
+
+    // 将向量存储到内存中
+    embeddings[key] = embedding_vector;
+
+    embeddings[key]  = generate_embedding(val);
     uint32_t nxtsize = s->getBytes();
     std::string res  = s->search(key);
     if (!res.length()) { // 新增
@@ -86,7 +94,6 @@ void KVStore::put(uint64_t key, const std::string &val) {
         nxtsize = nxtsize - res.length() + val.length();
     if (nxtsize + 10240 + 32 <= MAXSIZE) {
         s->insert(key, val);
-        embeddings[key] = generate_embedding(val);
     } else {
         sstable ss(s);
         s->reset();
@@ -100,23 +107,26 @@ void KVStore::put(uint64_t key, const std::string &val) {
         ss.putFile(url.data()); // 加入磁盘
         compaction();
         s->insert(key, val);
-        embeddings[key] = generate_embedding(val);
     }
+
+    auto end = std::chrono::high_resolution_clock::now(); // 计时结束
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "put operation took " << duration.count() << " microseconds" << std::endl;
 }
 
 /**
  * Returns the (string) value of the given key.
  * An empty string indicates not found.
  */
-std::string KVStore::get(uint64_t key) //
-{
+std::string KVStore::get(uint64_t key) {
+    auto start = std::chrono::high_resolution_clock::now(); // 计时开始
+
     uint64_t time = 0;
     int goalOffset;
     uint32_t goalLen;
     std::string goalUrl;
     std::string res = s->search(key);
-    if (res.length()) { // 在memtable中找到, 或者是deleted，说明最近被删除过，
-                        // 不用查sstable
+    if (res.length()) {
         if (res == DEL)
             return "";
         return res;
@@ -133,9 +143,7 @@ std::string KVStore::get(uint64_t key) //
                 else
                     break;
             }
-            // sstable ss;
-            // ss.loadFile(it.getFilename().data());
-            if (it.getTime() > time) { // find the latest head
+            if (it.getTime() > time) {
                 time       = it.getTime();
                 goalUrl    = it.getFilename();
                 goalOffset = offset + 32 + 10240 + 12 * it.getCnt();
@@ -143,13 +151,17 @@ std::string KVStore::get(uint64_t key) //
             }
         }
         if (time)
-            break; // only a test for found
+            break;
     }
     if (!goalUrl.length())
-        return ""; // not found a sstable
+        return "";
     res = fetchString(goalUrl, goalOffset, goalLen);
     if (res == DEL)
         return "";
+
+    auto end = std::chrono::high_resolution_clock::now(); // 计时结束
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "get operation took " << duration.count() << " microseconds" << std::endl;
     return res;
 }
 
@@ -158,20 +170,25 @@ std::string KVStore::get(uint64_t key) //
  * Returns false iff the key is not found.
  */
 bool KVStore::del(uint64_t key) {
+    auto start = std::chrono::high_resolution_clock::now(); // 计时开始
+
     std::string res = get(key);
     if (!res.length())
         return false;
+    embeddings.erase(key);
     put(key, DEL);
-    embeddings[key] = generate_embedding(DEL);
+
+    auto end = std::chrono::high_resolution_clock::now(); // 计时结束
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "del operation took " << duration.count() << " microseconds" << std::endl;
     return true;
 }
-
 /**
  * This resets the kvstore. All key-value pairs should be removed,
  * including memtable and all sstables files.
  */
 void KVStore::reset() {
-    s->reset(); // 清空memtable
+    s->reset();         // 清空memtable
     embeddings.clear(); // 清空嵌入向量
     std::vector<std::string> files;
     for (int level = 0; level <= totalLevel; ++level) {
@@ -217,42 +234,38 @@ struct cmp {
 };
 
 void KVStore::scan(uint64_t key1, uint64_t key2, std::list<std::pair<uint64_t, std::string>> &list) {
+    auto start = std::chrono::high_resolution_clock::now(); // 计时开始
+
     std::vector<std::pair<uint64_t, std::string>> mem;
-    // std::set<myPair> heap; // 维护一个指针最小堆
     std::priority_queue<myPair, std::vector<myPair>, cmp> heap;
-    // std::vector<sstable> ssts;
     std::vector<sstablehead> sshs;
-    s->scan(key1, key2, mem);   // add in mem
-    std::vector<int> head, end; // [head, end)
+    s->scan(key1, key2, mem);
+    std::vector<int> head, end;
     int cnt = 0;
     if (mem.size())
         heap.push(myPair(mem[0].first, INF, 0, -1, "qwq"));
     for (int level = 0; level <= totalLevel; ++level) {
         for (sstablehead it : sstableIndex[level]) {
             if (key1 > it.getMaxV() || key2 < it.getMinV())
-                continue; // 无交集
+                continue;
             int hIndex = it.lowerBound(key1);
             int tIndex = it.lowerBound(key2);
-            if (hIndex < it.getCnt()) { // 此sstable可用
-                // sstable ss; // 读sstable
+            if (hIndex < it.getCnt()) {
                 std::string url = it.getFilename();
-                // ss.loadFile(url.data());
-
                 heap.push(myPair(it.getKey(hIndex), it.getTime(), hIndex, cnt++, url));
                 head.push_back(hIndex);
                 if (it.search(key2) == tIndex)
-                    tIndex++; // tIndex为第一个不可的
+                    tIndex++;
                 end.push_back(tIndex);
-                // ssts.push_back(ss); // 加入ss
                 sshs.push_back(it);
             }
         }
     }
-    uint64_t lastKey = INF; // only choose the latest key
-    while (!heap.empty()) { // 维护堆
+    uint64_t lastKey = INF;
+    while (!heap.empty()) {
         myPair cur = heap.top();
         heap.pop();
-        if (cur.id >= 0) { // from sst
+        if (cur.id >= 0) {
             if (cur.key != lastKey) {
                 lastKey         = cur.key;
                 uint32_t start  = sshs[cur.id].getOffset(cur.index - 1);
@@ -262,10 +275,10 @@ void KVStore::scan(uint64_t key1, uint64_t key2, std::list<std::pair<uint64_t, s
                 if (res.length() && res != DEL)
                     list.emplace_back(cur.key, res);
             }
-            if (cur.index + 1 < end[cur.id]) { // add next one to heap
+            if (cur.index + 1 < end[cur.id]) {
                 heap.push(myPair(sshs[cur.id].getKey(cur.index + 1), cur.time, cur.index + 1, cur.id, cur.filename));
             }
-        } else { // from mem
+        } else {
             if (cur.key != lastKey) {
                 lastKey         = cur.key;
                 std::string res = mem[cur.index].second;
@@ -277,18 +290,21 @@ void KVStore::scan(uint64_t key1, uint64_t key2, std::list<std::pair<uint64_t, s
             }
         }
     }
+
+    auto endtime = std::chrono::high_resolution_clock::now(); // 计时结束
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(endtime - start);
+    std::cout << "scan operation took " << duration.count() << " microseconds" << std::endl;
 }
 
 void KVStore::compaction() {
-    int curLevel = 0;
+    auto start = std::chrono::high_resolution_clock::now(); // 计时开始
 
+    int curLevel = 0;
     while (out_of_limit(curLevel)) {
         std::string path = std::string("./data/level-") + std::to_string(curLevel + 1);
         if (!utils::dirExists(path)) {
             utils::mkdir(path.data());
         }
-
-        // 取出待合并的sstable
         std::vector<sstablehead> toMerge;
         int size = sstableIndex[curLevel].size();
         if (curLevel == 0) {
@@ -299,27 +315,18 @@ void KVStore::compaction() {
         for (int i = 0; i < size; i++) {
             toMerge.push_back(sstableIndex[curLevel][i]);
         }
-
-        // 获取待合并的sstable的key的范围
         uint64_t minKey = INF, maxKey = 0;
         for (auto &head : toMerge) {
             minKey = std::min(minKey, head.getMinV());
             maxKey = std::max(maxKey, head.getMaxV());
         }
-
-        // 寻找下一层中键值重叠的sstables
         for (auto &it : sstableIndex[curLevel + 1]) {
             if (it.getMinV() <= maxKey && it.getMaxV() >= minKey) {
                 toMerge.push_back(it);
             }
         }
-
-        // 将toMerge中的sstables按时间戳排序
-        // 保证下一步中时间数较大的key会覆盖时间数较小的key
         std::sort(toMerge.begin(), toMerge.end());
         uint64_t maxTime = toMerge.back().getTime();
-
-        // 合并toMerge中的sstable
         std::map<uint64_t, std::string> mergeMap;
         for (auto &it : toMerge) {
             sstable ss;
@@ -332,37 +339,34 @@ void KVStore::compaction() {
             }
             delsstable(it.getFilename());
         }
-
-        // 生成新的sstable
         sstable newSST;
         uint32_t maxNameSuf = 0;
         for (auto &it : sstableIndex[curLevel + 1]) {
             maxNameSuf = it.getTime() == maxTime ? std::max(maxNameSuf, it.getNameSuf()) : maxNameSuf;
         }
         newSST.setTime(maxTime);
-        newSST.setNamesuffix(maxNameSuf); // 确保文件后缀不重复
-
+        newSST.setNamesuffix(maxNameSuf);
         for (auto &it : mergeMap) {
             if (newSST.checkSize(it.second, curLevel + 1, 0)) {
                 addsstable(newSST, curLevel + 1);
                 newSST.reset();
             }
             if (curLevel + 1 == totalLevel && it.second == DEL) {
-                continue; // 如果是最后一层，且value为DEL，则不插入
+                continue;
             }
             newSST.insert(it.first, it.second);
         }
         newSST.checkSize("", curLevel + 1, 1);
         addsstable(newSST, curLevel + 1);
-
-        // 将sstableIndex[curLevel+1]排序
         std::sort(sstableIndex[curLevel + 1].begin(), sstableIndex[curLevel + 1].end());
         curLevel++;
     }
-
     totalLevel = std::max(totalLevel, curLevel);
-}
 
+    auto end = std::chrono::high_resolution_clock::now(); // 计时结束
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "compaction operation took " << duration.count() << " microseconds" << std::endl;
+}
 void KVStore::delsstable(std::string filename) {
     for (int level = 0; level <= totalLevel; ++level) {
         int size = sstableIndex[level].size(), flag = 0;
@@ -432,71 +436,51 @@ std::string KVStore::fetchString(std::string file, int startOffset, uint32_t len
 }
 
 std::vector<float> KVStore::generate_embedding(const std::string &value) {
-    return embedding_single(value); // 调用提供的嵌入模型
+    return embedding_single(value);
 }
 
 std::vector<std::pair<std::uint64_t, std::string>> KVStore::search_knn(std::string query, int k) {
-    // 生成查询字符串的嵌入向量
-    std::vector<float> query_vec = generate_embedding(query);
+    auto start = std::chrono::high_resolution_clock::now(); // 计时开始
 
-    // 定义比较函数：按余弦相似度从高到低排序
-    auto cmp = [](const std::pair<double, std::pair<uint64_t, std::string>> &a,
-                  const std::pair<double, std::pair<uint64_t, std::string>> &b) {
-        return a.first < b.first; // 最大堆
-    };
-    std::priority_queue<std::pair<double, std::pair<uint64_t, std::string>>,
-                        std::vector<std::pair<double, std::pair<uint64_t, std::string>>>,
-                        decltype(cmp)> pq(cmp);
-
-    // 计算余弦相似度的辅助函数
-    auto cosine_similarity = [](const std::vector<float> &a, const std::vector<float> &b) {
-        double dot = 0.0, norm_a = 0.0, norm_b = 0.0;
-        for (size_t i = 0; i < a.size(); i++) {
-            dot += a[i] * b[i];
-            norm_a += a[i] * a[i];
-            norm_b += b[i] * b[i];
+    std::vector<std::pair<uint64_t, float>> scores;
+    std::vector<std::pair<uint64_t, std::string>> results;
+    std::vector<float> query_vec = embedding_single(query);
+    if (query_vec.empty())
+        return results;
+    for (const auto &[key, vec] : embeddings) {
+        float dot = 0, norm_a = 0, norm_b = 0;
+        for (size_t i = 0; i < vec.size(); ++i) {
+            dot += vec[i] * query_vec[i];
+            norm_a += vec[i] * vec[i];
+            norm_b += query_vec[i] * query_vec[i];
         }
-        if (norm_a == 0 || norm_b == 0) return 0.0;
-        return dot / (sqrt(norm_a) * sqrt(norm_b));
-    };
-
-    // 遍历memtable
-    std::vector<std::pair<uint64_t, std::string>> mem;
-    s->scan(0, UINT64_MAX, mem);
-    for (const auto &pair : mem) {
-        if (pair.second != DEL) {
-            double sim = cosine_similarity(query_vec, embeddings[pair.first]);
-            pq.push({sim, {pair.first, pair.second}});
+        float similarity = 0;
+        if (norm_a > 0 && norm_b > 0) {
+            similarity = dot / (sqrt(norm_a) * sqrt(norm_b));
         }
+        scores.emplace_back(key, similarity);
     }
-
-    // 遍历SSTables
-    for (int level = 0; level <= totalLevel; ++level) {
-        for (const auto &head : sstableIndex[level]) {
-            uint32_t cnt = head.getCnt();
-            for (uint32_t i = 0; i < cnt; i++) {
-                uint64_t key = head.getKey(i);
-                uint32_t offset = head.getOffset(i);
-                uint32_t len = (i + 1 < cnt) ? head.getOffset(i + 1) - offset : 0;
-                std::string val = fetchString(head.getFilename(), 10240 + 32 + cnt * 12 + offset, len);
-                if (val != DEL) {
-                    // 如果嵌入不在内存中，重新生成（仅在内存丢失时发生）
-                    if (embeddings.find(key) == embeddings.end()) {
-                        embeddings[key] = generate_embedding(val);
-                    }
-                    double sim = cosine_similarity(query_vec, embeddings[key]);
-                    pq.push({sim, {key, val}});
-                }
-            }
+    std::sort(
+        scores.begin(),
+        scores.end(),
+        [](const std::pair<uint64_t, float> &a, const std::pair<uint64_t, float> &b) {
+            if (a.second != b.second)
+                return a.second > b.second;
+            return a.first < b.first;
+        }
+    );
+    for (const auto &[key, score] : scores) {
+        if (k <= 0)
+            break;
+        std::string value = get(key);
+        if (!value.empty() && value != DEL) {
+            results.emplace_back(key, value);
+            --k;
         }
     }
 
-    // 取出前k个结果
-    std::vector<std::pair<uint64_t, std::string>> result;
-    while (!pq.empty() && result.size() < static_cast<size_t>(k)) {
-        auto top = pq.top();
-        pq.pop();
-        result.push_back(top.second);
-    }
-    return result;
+    auto end = std::chrono::high_resolution_clock::now(); // 计时结束
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    std::cout << "search_knn operation took " << duration.count() << " microseconds" << std::endl;
+    return results;
 }

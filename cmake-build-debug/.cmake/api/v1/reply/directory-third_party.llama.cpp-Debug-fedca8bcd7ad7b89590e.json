@@ -51,7 +51,7 @@
 				"third_party/llama.cpp/src/libllama.a"
 			],
 			"targetId" : "llama::@bf716c64e9230b199072",
-			"targetIndex" : 9,
+			"targetIndex" : 10,
 			"type" : "target"
 		},
 		{

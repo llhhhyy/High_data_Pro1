@@ -53,12 +53,6 @@
 				"parent" : 2
 			},
 			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 214,
-				"parent" : 0
-			},
-			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 299,
@@ -68,13 +62,19 @@
 				"command" : 3,
 				"file" : 2,
 				"line" : 8,
-				"parent" : 5
+				"parent" : 4
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 229,
-				"parent" : 6
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 0
 			},
 			{
 				"command" : 5,
@@ -271,12 +271,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 4,
-			"id" : "ggml-base::@6fb243c56d1be69d9933"
+			"backtrace" : 6,
+			"id" : "ggml-cpu::@6fb243c56d1be69d9933"
 		},
 		{
 			"backtrace" : 7,
-			"id" : "ggml-cpu::@6fb243c56d1be69d9933"
+			"id" : "ggml-base::@6fb243c56d1be69d9933"
 		}
 	],
 	"id" : "ggml::@6fb243c56d1be69d9933",

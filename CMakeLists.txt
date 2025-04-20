@@ -51,19 +51,19 @@ add_executable(E2E_test
 )
 target_link_libraries(E2E_test embedding)
 
-## 定义 Timing_Test 可执行文件
-#add_executable(
-#        Timing_Test
-#        test/Timing_Test.cpp
-#        kvstore_api.h kvstore.h
-#        kvstore.cc
-#        skiplist.cpp skiplist.h
-#        sstable.cpp sstable.h
-#        bloom.cpp bloom.h
-#        MurmurHash3.h utils.h test.h
-#        sstablehead.cpp sstablehead.h
-#)
-#target_link_libraries(Timing_Test embedding)
+# 定义 Timing_Test 可执行文件
+add_executable(
+        Time_Test
+        test/Time_Test.cpp
+        kvstore_api.h kvstore.h
+        kvstore.cc
+        skiplist.cpp skiplist.h
+        sstable.cpp sstable.h
+        bloom.cpp bloom.h
+        MurmurHash3.h utils.h test.h
+        sstablehead.cpp sstablehead.h
+)
+target_link_libraries(Time_Test embedding)
 
 # 添加子目录
 add_subdirectory(third_party/llama.cpp)

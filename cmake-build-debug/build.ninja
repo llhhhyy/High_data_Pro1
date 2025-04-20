@@ -265,6 +265,81 @@ build E2E_test.exe: CXX_EXECUTABLE_LINKER__E2E_test_Debug CMakeFiles/E2E_test.di
   TARGET_IMPLIB = libE2E_test.dll.a
   TARGET_PDB = E2E_test.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Time_Test
+
+
+#############################################
+# Order-only phony target for Time_Test
+
+build cmake_object_order_depends_target_Time_Test: phony || cmake_object_order_depends_target_build_info cmake_object_order_depends_target_common cmake_object_order_depends_target_embedding cmake_object_order_depends_target_ggml cmake_object_order_depends_target_ggml-base cmake_object_order_depends_target_ggml-cpu cmake_object_order_depends_target_llama
+
+build CMakeFiles/Time_Test.dir/test/Time_test.cpp.obj: CXX_COMPILER__Time_Test_unscanned_Debug D$:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/test/Time_test.cpp || cmake_object_order_depends_target_Time_Test
+  DEFINES = -DGGML_USE_CPU
+  DEP_FILE = CMakeFiles\Time_Test.dir\test\Time_test.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -pthread
+  INCLUDES = -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/embedding -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/.
+  OBJECT_DIR = CMakeFiles\Time_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Time_Test.dir\test
+
+build CMakeFiles/Time_Test.dir/kvstore.cc.obj: CXX_COMPILER__Time_Test_unscanned_Debug D$:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/kvstore.cc || cmake_object_order_depends_target_Time_Test
+  DEFINES = -DGGML_USE_CPU
+  DEP_FILE = CMakeFiles\Time_Test.dir\kvstore.cc.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -pthread
+  INCLUDES = -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/embedding -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/.
+  OBJECT_DIR = CMakeFiles\Time_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Time_Test.dir
+
+build CMakeFiles/Time_Test.dir/skiplist.cpp.obj: CXX_COMPILER__Time_Test_unscanned_Debug D$:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/skiplist.cpp || cmake_object_order_depends_target_Time_Test
+  DEFINES = -DGGML_USE_CPU
+  DEP_FILE = CMakeFiles\Time_Test.dir\skiplist.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -pthread
+  INCLUDES = -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/embedding -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/.
+  OBJECT_DIR = CMakeFiles\Time_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Time_Test.dir
+
+build CMakeFiles/Time_Test.dir/sstable.cpp.obj: CXX_COMPILER__Time_Test_unscanned_Debug D$:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/sstable.cpp || cmake_object_order_depends_target_Time_Test
+  DEFINES = -DGGML_USE_CPU
+  DEP_FILE = CMakeFiles\Time_Test.dir\sstable.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -pthread
+  INCLUDES = -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/embedding -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/.
+  OBJECT_DIR = CMakeFiles\Time_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Time_Test.dir
+
+build CMakeFiles/Time_Test.dir/bloom.cpp.obj: CXX_COMPILER__Time_Test_unscanned_Debug D$:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/bloom.cpp || cmake_object_order_depends_target_Time_Test
+  DEFINES = -DGGML_USE_CPU
+  DEP_FILE = CMakeFiles\Time_Test.dir\bloom.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -pthread
+  INCLUDES = -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/embedding -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/.
+  OBJECT_DIR = CMakeFiles\Time_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Time_Test.dir
+
+build CMakeFiles/Time_Test.dir/sstablehead.cpp.obj: CXX_COMPILER__Time_Test_unscanned_Debug D$:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/sstablehead.cpp || cmake_object_order_depends_target_Time_Test
+  DEFINES = -DGGML_USE_CPU
+  DEP_FILE = CMakeFiles\Time_Test.dir\sstablehead.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -pthread
+  INCLUDES = -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/embedding -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/. -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/src/../common -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/ggml/src/../include -ID:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/third_party/llama.cpp/common/.
+  OBJECT_DIR = CMakeFiles\Time_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Time_Test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Time_Test
+
+
+#############################################
+# Link the executable Time_Test.exe
+
+build Time_Test.exe: CXX_EXECUTABLE_LINKER__Time_Test_Debug CMakeFiles/Time_Test.dir/test/Time_test.cpp.obj CMakeFiles/Time_Test.dir/kvstore.cc.obj CMakeFiles/Time_Test.dir/skiplist.cpp.obj CMakeFiles/Time_Test.dir/sstable.cpp.obj CMakeFiles/Time_Test.dir/bloom.cpp.obj CMakeFiles/Time_Test.dir/sstablehead.cpp.obj | embedding/libembedding.a third_party/llama.cpp/common/libcommon.a third_party/llama.cpp/src/libllama.a third_party/llama.cpp/ggml/src/ggml.a third_party/llama.cpp/ggml/src/ggml-cpu.a third_party/llama.cpp/ggml/src/ggml-base.a D$:/gcc14.2/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/libgomp.dll.a D$:/gcc14.2/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a D$:/gcc14.2/mingw64/x86_64-w64-mingw32/lib/libpthread.dll.a D$:/gcc14.2/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a D$:/gcc14.2/mingw64/x86_64-w64-mingw32/lib/libpthread.dll.a || embedding/libembedding.a third_party/llama.cpp/common/build_info third_party/llama.cpp/common/libcommon.a third_party/llama.cpp/ggml/src/ggml-base.a third_party/llama.cpp/ggml/src/ggml-cpu.a third_party/llama.cpp/ggml/src/ggml.a third_party/llama.cpp/src/libllama.a
+  FLAGS = -g
+  LINK_LIBRARIES = embedding/libembedding.a  third_party/llama.cpp/common/libcommon.a  third_party/llama.cpp/src/libllama.a  third_party/llama.cpp/ggml/src/ggml.a  third_party/llama.cpp/ggml/src/ggml-cpu.a  third_party/llama.cpp/ggml/src/ggml-base.a  -pthread  D:/gcc14.2/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/libgomp.dll.a  D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a  D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib/libpthread.dll.a  D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a  D:/gcc14.2/mingw64/x86_64-w64-mingw32/lib/libpthread.dll.a  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Time_Test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Time_Test.exe
+  TARGET_IMPLIB = libTime_Test.dll.a
+  TARGET_PDB = Time_Test.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1509,6 +1584,8 @@ build Embedding_Test: phony test/Embedding_Test.exe
 
 build Embedding_Test.exe: phony test/Embedding_Test.exe
 
+build Time_Test: phony Time_Test.exe
+
 build build_info: phony third_party/llama.cpp/common/build_info
 
 build common: phony third_party/llama.cpp/common/libcommon.a
@@ -1547,7 +1624,7 @@ build persistence: phony persistence.exe
 #############################################
 # Folder: D:/Haoyu_Liu/Homework_2/High_level_data_structures/Project1/LSM_Tree/cmake-build-debug
 
-build all: phony correctness.exe persistence.exe E2E_test.exe third_party/llama.cpp/all embedding/all test/all
+build all: phony correctness.exe persistence.exe E2E_test.exe Time_Test.exe third_party/llama.cpp/all embedding/all test/all
 
 # =============================================================================
 
